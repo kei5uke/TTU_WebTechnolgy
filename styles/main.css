@@ -1,0 +1,245 @@
+@charset "UTF-8";
+/* Style for lists and pages */
+
+.list, .pagination {
+    margin: auto auto auto 8em;
+}
+
+/* Style for body */
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    font-family: "Oxygen", sans-serif;
+}
+
+/* Style for application form */
+
+input[type=search] {
+    padding: 1em;
+    margin: 0 auto 0 3em;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    padding: 1em;
+    margin: 0 auto 0 1em;
+}
+
+/* Style for description */
+
+.description {
+    display: block;
+    text-align: left;
+    float: left;
+    padding: 20px;
+    flex: 1 0 auto;
+    margin: auto 0;
+}
+
+.description_list ul {
+    display: inline-block;
+    text-align: left;
+}
+
+.description_img img {
+    height: 25px;
+    width: 25px;
+    float: center;
+    position: absolute;
+    margin-top: -2px;
+    margin-left: 10px;
+}
+
+.description_img h4 {
+    top: 18px;
+    left: 10px;
+    margin: auto;
+}
+
+/* Style for header */
+
+header {
+    height: 5em;
+    background-color: rgb(171, 216, 248);
+}
+
+nav ul {
+    min-width: 6em;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav .image {
+    margin: auto auto auto 3em;
+    float: left;
+    padding-top: 0.6em;
+}
+
+.menu_table {
+    display: table;
+    margin: auto auto auto 5em;
+    float: left;
+    padding-top: 0.75em;
+}
+
+.menu_account_table {
+    display: table;
+    margin: auto 3em auto auto;
+    float: right;
+    padding-top: 1em;
+}
+
+.menu {
+    margin-bottom: 1em;
+}
+
+.menu a {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.8em;
+    color: rgb(11, 69, 102);
+    font-size: 1.25em;
+    text-align: center;
+}
+
+.account a {
+    text-decoration: none;
+    font-weight: bold;
+    background-color: rgb(11, 69, 102);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 0.7em 0.9em;
+    text-align: center;
+    font-size: medium;
+    margin: 0 0.5em;
+    cursor: pointer;
+}
+
+.menu a:hover, ul li.menu:hover {
+    color: rgb(8, 94, 145);
+}
+
+.account a:hover {
+    background-color: rgb(11, 69, 102, 0.5);
+}
+
+/* Style for footer */
+
+footer {
+    background-color: rgb(11, 69, 102);
+    margin-top: auto;
+    height: 7em;
+}
+
+.footer_table {
+    display: table;
+    margin: 0.5em auto auto auto;
+}
+
+.footer_menu {
+    list-style: none;
+    margin: auto auto 0.5em auto;
+}
+
+.footer_menu a {
+    text-decoration: none;
+    padding: 0.8em;
+    color: rgb(255, 255, 255);
+    font-size: 1.25em;
+    text-align: center;
+}
+
+.footer_menu a:hover {
+    text-decoration: underline;
+}
+
+.left, .list {
+    float: left;
+    margin: 3em auto auto 8em;
+    padding: 1em;
+}
+
+.left {
+    border: 3px solid rgb(11, 69, 102);
+}
+
+.right {
+    float: right;
+    border: 3px solid rgb(11, 69, 102);
+    margin: 3em 18em auto auto;
+    padding: 1em;
+}
+
+.content {
+    animation: transitionIn 0.75s;
+    padding-bottom: 6em;
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+/*Style for the page numbers*/
+
+.pagination li {
+    display: inline;
+    padding: 10px 15px;
+    border: 1px #ccc solid;
+    color: rgb(11, 69, 102);
+    border-radius: 5px / 5px;
+}
+
+.pagination a:hover {
+    color: rgb(8, 94, 145);
+}
+
+/*Style for the job lists*/
+
+.jobs li {
+    background-color: rgb(11, 69, 102);
+    list-style: none;
+    width: 18em;
+    height: 6em;
+    margin: 2em auto auto auto;
+    padding: 0.5em;
+}
+
+.jobs li a {
+    text-decoration: none;
+    color: white;
+}
+
+.jobs li a:hover {
+    text-decoration: underline;
+}
+
+.jobs li img {
+    height: 3em;
+    width: 3em;
+    float: left;
+    padding: 1.5em 1em 1em 1em;
+}
+
+.jobs li p {
+    padding: 0.75em 1em 1em 1em;
+    margin-left: 5em;
+}
+
+textarea {
+    width: 300px;
+    height: 100px;
+}
